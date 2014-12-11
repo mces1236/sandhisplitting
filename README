@@ -1,0 +1,26 @@
+This is the read me file for sandhi splitting.
+
+we have 3 Folders
+
+1. Train : contains all the files that are required for training. it contains 2 files vowels and training data.
+2. Test : contains 2 test files one contains subset of words from training data and another contains some tokens taken from Telugu Wikipedia.
+3. Output directory contains the output. 
+
+Syntax to run
+sh run.sh Training_File_Name Test_File_Name
+
+To Execute
+
+command :
+sh run.sh Train/sandhiwords_wx_train.txt Test/wordsFromWikipedia
+sh run.sh Train/sandhiwords_wx_train.txt Test/wordsFromTraining
+
+when you run these commands sandhioutput is the default file which contains output. it is present in Output directory.
+
+Test Files
+wordsFromTraining : contains subset of words taken from training.
+wordsFromWikipedia : contains words taken from telugu wikipedia.
+
+Output Files
+outputFromTraining : contains results for the input file wordsFromTraining
+outputFromWikipedia : contains results for the input file wordsFromWikipedia
